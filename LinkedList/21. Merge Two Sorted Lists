@@ -1,0 +1,50 @@
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+
+        if (list1 == NULL){
+            return list2;
+        }
+
+        if(list2 == NULL){
+            return list1;
+        }
+
+        ListNode* endOfList1 = list1;
+        while (endOfList1 -> next != NULL){
+            endOfList1 = endOfList1 -> next;
+        }
+
+        endOfList1 -> next = list2;
+        return bubbleSortList(list1);
+    }
+
+    private:
+    ListNode* bubbleSortList(ListNode* head){
+        if(!head || !head -> next){
+            return head;
+        }
+
+        bool swapped;
+        do{
+            swapped = false;
+            ListNode* current = head;
+            ListNode* prev = NULL;
+
+            while(current && current -> next){
+                if (current -> val > current -> next -> val){
+                    int temp = current -> val;
+                    current -> val = current -> next -> val;
+                    current -> next -> val = temp;
+                    swapped = true;
+                }
+
+                prev = current;
+                current = current -> next;
+            }
+        }
+        while (swapped);
+        return head;
+    }
+
+};
