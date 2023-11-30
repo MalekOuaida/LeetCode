@@ -1,0 +1,33 @@
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        int count = 0;
+        ListNode* current = head;
+        while(current != NULL){
+            count++;
+            current = current -> next;
+        }
+
+        int* values = new int[count];
+
+        current = head;
+        for (int i = 0; i < count; i++){
+            values[i] = current -> val;
+            current = current -> next;
+        }
+
+        int left = 0;
+        int right = count - 1;
+        while (left < right){
+            if(values[left] != values[right]){
+                delete[] values;
+                return false;
+            }
+            left++;
+            right--;
+        }
+        
+        delete [] values;
+        return true;
+    }
+};
