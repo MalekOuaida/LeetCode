@@ -4,7 +4,7 @@ Welcome to my repository of LeetCode problem solutions. This repository contains
 
 ## About Me
 
-Hello! I'm a passionate individual currently pursuing my studies at the University of Balamand. My journey in academia has been an exciting blend of challenges and discoveries, particularly in the fascinating world of coding. The thrill of solving complex problems and bringing ideas to life through code is what drives my academic and personal endeavors.
+Hello! I'm Malek, a passionate individual currently pursuing my studies at the University of Balamand. My journey in academia has been an exciting blend of challenges and discoveries, particularly in the fascinating world of coding. The thrill of solving complex problems and bringing ideas to life through code is what drives my academic and personal endeavors.
 
 But my interests are not confined to the digital realm. I have a deep appreciation for art in all its forms. This love for art complements my technical skills, allowing me to approach problems with a unique blend of creativity and logic. Whether it's exploring the latest trends in technology or immersing myself in the diverse world of art, I believe in a balanced approach to life, where every moment is an opportunity to learn and grow.
 
