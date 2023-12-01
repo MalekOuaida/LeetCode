@@ -1,0 +1,29 @@
+class Solution {
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode resultHead(0);
+        ListNode* currentL1 = l1, *currentL2 = l2, *resultTail = &resultHead;
+        int carry = 0;
+
+        while (currentL1 != NULL || currentL2 != NULL){
+            int valueL1 = (currentL1 != NULL) ? currentL1 -> val : 0;
+            int valueL2 = (currentL2 != NULL) ? currentL2 -> val : 0;
+            int sum = carry + valueL1 + valueL2;
+            carry = sum / 10;
+            resultTail -> next = new ListNode (sum % 10);
+            resultTail = resultTail -> next;
+            if (currentL1 != NULL){
+                currentL1 = currentL1 -> next;
+            }
+            if (currentL2 != NULL){
+                currentL2 = currentL2 -> next;
+            }
+        }
+
+        if(carry > 0){
+            resultTail -> next = new ListNode(carry);
+        }
+
+        return resultHead.next;
+    }
+};
