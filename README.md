@@ -12,7 +12,7 @@ But my interests are not confined to the digital realm. I have a deep appreciati
 
 - Each problem has its own directory named after the problem.
 - Inside each directory, you will find:
-  - A `solution` file containing the code (e.g., `solution.py`, `solution.java`).
+  - A `solution` file containing the code (e.g., `solution.cpp`).
   - A `README.md` file explaining the problem and the approach used in the solution.
 
 ## How to Use This Repository
